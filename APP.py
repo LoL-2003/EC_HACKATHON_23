@@ -507,7 +507,7 @@ option = st.radio(
 )
 
 
-
+st.title('EC HACKATHON 2023')
 if option == 'Transcribe Pre-recorded Audio':
     st.write("Audio Transcription from Pre-recorded Files")
     st.caption("Upload an audio file, and the bot will transcribe it for you.")
