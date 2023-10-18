@@ -499,15 +499,13 @@ def header_footer():
     st.markdown(hide_st_style, unsafe_allow_html=True)
     
 header_footer()
-
+st.title('EC HACKATHON 2023')
 st.write("Select an option:")
 option = st.radio(
     'How would you like to use the bot?',
     ('Transcribe Pre-recorded Audio', 'Record & Transcribe')
 )
 
-
-st.title('EC HACKATHON 2023')
 if option == 'Transcribe Pre-recorded Audio':
     st.write("Audio Transcription from Pre-recorded Files")
     st.caption("Upload an audio file, and the bot will transcribe it for you.")
