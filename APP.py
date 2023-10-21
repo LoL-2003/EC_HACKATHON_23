@@ -510,7 +510,7 @@ if option == 'Transcribe Pre-recorded Audio':
     st.write("Audio Transcription from Pre-recorded Files")
     st.caption("Upload an audio file, and the bot will transcribe it for you.")
     uploaded_file = st.file_uploader("Upload an audio file (MP3, WAV, etc.)")
-    API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v2"
+    API_URL = st.secrets['huggingfacemodel']
 
     if uploaded_file is not None:
         st.audio(uploaded_file, format="audio/mp3", start_time=0)
@@ -524,7 +524,7 @@ if option == 'Transcribe Pre-recorded Audio':
         with open(audio_file_path, "rb") as f:
             audio_data = f.read()
 
-        headers = {"Authorization": "Bearer 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"}
+        headers = {"Authorization": st.secrets['hugging_face']}
 
         with st.spinner("Transcribing..."):
             response = requests.post(API_URL, headers=headers, data=audio_data)
