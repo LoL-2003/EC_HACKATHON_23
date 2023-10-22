@@ -636,7 +636,7 @@ st.set_page_config(page_title="EC_HACKATHON-2023")
 header_footer()
 if not firebase_admin._apps:
     # Initialize Firebase Admin SDK
-    cred = credentials.Certificate("ec-hack-2023-c35a12353f9e.json")
+    cred = credentials.Certificate(st.secrets['Certificate'])
     firebase_admin.initialize_app(cred)
 
 def sendEmail(to, content, user='User'):
