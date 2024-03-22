@@ -881,7 +881,10 @@ def app():
         
             language_names = list(LANGUAGES.keys())
         
-            input_language = 'en'  # Default to English 
+            input_language = st.selectbox(
+                "Select your input language",
+                language_names
+            )  # English 
         
             out_lang = st.selectbox(
                 "Select your output language",
@@ -1000,7 +1003,8 @@ def app():
              headers = {"Authorization": "Bearer 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"}
         
              with st.spinner("Transcribing..."):
-                API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v2"
+                #API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v2"
+                 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3"
                 response = requests.post(API_URL, headers=headers, data=recorded_audio_bytes)
                 output = response.json().get('text', "")
         
