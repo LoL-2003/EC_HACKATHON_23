@@ -880,7 +880,7 @@ def app():
             text = transcribe_Text
         
             language_names = list(LANGUAGES.keys())
-        
+            input_language = "hi"#default hindi
             input_language = st.selectbox(
                 "Select your input language",
                 language_names
