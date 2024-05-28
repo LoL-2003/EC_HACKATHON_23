@@ -609,7 +609,7 @@ def header_footer():
               <a class="nav-link" href="https://github.com/Adi1042003">GitHub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://drive.google.com/file/d/1ujXRY5C62cIPsFlxYiho7m8iP5hR1c5L/view?usp=sharing">About Project</a>
+              <a class="nav-link" href="https://drive.google.com/file/d/1lH_kcpl4t9HbF6uWTAc8PR431c1DzIAl/view?usp=sharing">About Project</a>
             </li>
           </ul>
         </div>
