@@ -945,7 +945,7 @@ def app():
 
             
         header_footer()
-        st.header(f':violet[AccentLingua]')
+        st.title(f':violet[AccentLingua]')
         st.write("Select an option:")
         option = st.radio(
             'How would you like to use the bot?',
