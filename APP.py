@@ -603,7 +603,7 @@ def header_footer():
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="linkedin.com/in/adityapuri10">Contact Us</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/adityapuri10/">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/Adi1042003">GitHub</a>
